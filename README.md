@@ -1,5 +1,4 @@
-<h1 align="center">LaraMaze</h1>
-<h2 align="center">Laravel + Mazer</h2>
+<h1 align="center">Laramaze</h1>
 
 <p>
 Laravel Boilerplate with Mazer Admin Panel and some packages such as auth, permission and users management.
