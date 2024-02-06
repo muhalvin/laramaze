@@ -1,0 +1,36 @@
+/* Media Query */
+
+/* Min width 1280px */
+@media screen and (min-width: 768px) {
+    .main-content {
+        min-height: 85vh;
+    }
+}
+
+/* Min width 1280px */
+@media screen and (min-width: 1280px) {
+    .main-content {
+        min-height: 85vh;
+    }
+}
+
+/* Min width 1440px */
+@media screen and (min-width: 1440px) {
+    .main-content {
+        min-height: 90vh;
+    }
+}
+
+/* Min width 1920px */
+@media screen and (min-width: 1920px) {
+    .main-content {
+        min-height: 95vh;
+    }
+}
+
+/* Min width 2560px */
+@media screen and (min-width: 2560px) {
+    .main-content {
+        min-height: 95vh;
+    }
+}

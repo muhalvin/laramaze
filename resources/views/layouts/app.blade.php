@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
+    <link rel="shortcut icon" href="{{ asset('assets/compiled/svg/favicon.svg') }}" type="image/x-icon" />
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
+    <link rel="stylesheet" href="{{ asset('assets/compiled/css/app.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/compiled/css/app-dark.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/compiled/css/iconly.css') }}" />
+
+    <link rel="stylesheet" href="{{ asset('assets/compiled/css/app-custom.min.css') }}" />
+
+    <script src="{{ asset('assets/static/js/initTheme.js') }}"></script>
+</head>
+
+<body>
+    <div id="app">
+        @include('layouts.partials.sidebar')
+
+        <div id="main">
+            <div class="main-content">
+                <header class="mb-3">
+                    <a href="#" class="burger-btn d-block d-xl-none">
+                        <i class="bi bi-justify fs-3"></i>
+                    </a>
                 </header>
-            @endif
 
-            <!-- Page Content -->
-            <main>
                 {{ $slot }}
-            </main>
+            </div>
+
+            @include('layouts.partials.footer')
         </div>
-    </body>
+    </div>
+
+    <script src="{{ asset('assets/static/js/components/dark.js') }}"></script>
+    <script src="{{ asset('assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+
+    <script src="{{ asset('assets/compiled/js/app.js') }}"></script>
+
+    @stack('js')
+
+</body>
+
 </html>
