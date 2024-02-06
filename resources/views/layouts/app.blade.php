@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="{{ asset('assets/compiled/css/iconly.css') }}" />
 
     <link rel="stylesheet" href="{{ asset('assets/compiled/css/app-custom.min.css') }}" />
+
+    <script src="{{ asset('assets/static/js/initTheme.js') }}"></script>
 </head>
 
 <body>
-    <script src="{{ asset('assets/static/js/initTheme.js') }}"></script>
-
     <div id="app">
         @include('layouts.partials.sidebar')
 
