@@ -41,7 +41,14 @@
                         <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
                     </div>
 
-                    <button class="btn btn-primary btn-block btn-lg shadow-lg mt-3">Register</button>
+                    <button class="btn btn-outline-primary btn-block btn-lg shadow-lg mt-3">
+                        Register
+                    </button>
+
+                    <a href="{{ route('auth.google') }}" class="btn btn-primary btn-block btn-lg mt-3">
+                        <i class="bi bi-google me-1"></i>
+                        <span class="text-sm">Sign up with Google</span>
+                    </a>
                 </form>
                 <div class="text-center mt-3 text-lg fs-6">
                     <p class="text-gray-600">
