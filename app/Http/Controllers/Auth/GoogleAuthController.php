@@ -39,7 +39,7 @@ class GoogleAuthController extends Controller
                 ]);
 
                 $newUser->where('email', $user->email)->update(['email_verified_at' => now()]);
-                // $newUser->assignRole('Member');
+                $newUser->assignRole('Guest');
 
                 Auth::login($newUser);
 

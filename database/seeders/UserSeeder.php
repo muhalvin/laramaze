@@ -26,7 +26,8 @@ class UserSeeder extends Seeder
                 'password'          => Hash::make('password'),
             ];
 
-            User::create($data);
+            $user = User::create($data);
+            $user->assignRole('Administrator');
 
             DB::commit();
         } catch (\Throwable $th) {
