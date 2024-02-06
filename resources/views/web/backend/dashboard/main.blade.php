@@ -1,7 +1,8 @@
 <x-app-layout>
     <div class="page-heading">
-        <h3>Profile Statistics</h3>
+        <h4>Profile Statistics</h4>
     </div>
+
     <div class="page-content">
         <section class="row">
             <div class="col-12 col-lg-9">
