@@ -63,6 +63,7 @@ If you want to check the original template in HTML5 and Bootstrap, [click here](
 
 ## Packages
 - Breeze
+- Socialite
 
 ## Contributing
 
