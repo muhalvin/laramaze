@@ -12,9 +12,9 @@ If you want to check the original template in HTML5 and Bootstrap, [click here](
 
 1. Clone this project
     ```bash
-    git clone https://github.com/muhalvin/laravel-sneat.git
+    git clone https://github.com/muhalvin/laramaze.git
 
-    cd laravel-sneat
+    cd laramaze
     ```
 2. Install dependencies
 
@@ -68,6 +68,3 @@ If you want to check the original template in HTML5 and Bootstrap, [click here](
 ## Contributing
 
 Feel free to contribute and make a pull request.
-
-## Project status
-- Ongoing
