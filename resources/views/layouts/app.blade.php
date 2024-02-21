@@ -46,6 +46,10 @@
 
     <script src="{{ asset('assets/compiled/js/app.js') }}"></script>
 
+    @if (flash()->message)
+        <script src="{{ asset('assets/static/js/components/alert.min.js') }}"></script>
+    @endif
+
     @stack('js')
 
 </body>

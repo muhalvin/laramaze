@@ -41,8 +41,6 @@
         <div class="sidebar-menu">
             <ul class="menu">
 
-                <li class="sidebar-title">Menu</li>
-
                 <x-nav-item-1 :active="request()->routeIs('dashboard')">
                     <x-nav-link :href="route('dashboard')">
                         <i class="bi bi-stack"></i>
@@ -54,10 +52,12 @@
                 <x-nav-item-1 :active="request()->routeIs('profile')">
                     <x-nav-link :href="route('profile')">
                         <i class="bi bi-person-lines-fill"></i>
-                        <span>Profile</span>
+                        <span>My Profile</span>
                     </x-nav-link>
                 </x-nav-item-1>
 
+
+                <li class="sidebar-title">Other Pages</li>
 
                 <x-nav-item-2 :active="request()->routeIs('components.*')">
                     <a href="#" class="sidebar-link">

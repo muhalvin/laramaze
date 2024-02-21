@@ -29,6 +29,8 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
+        flash('Successfully login.');
+
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
@@ -42,6 +44,8 @@ class AuthenticatedSessionController extends Controller
         $request->session()->invalidate();
 
         $request->session()->regenerateToken();
+
+        flash('Successfully logout.');
 
         return redirect('/');
     }
