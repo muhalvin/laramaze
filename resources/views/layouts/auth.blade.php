@@ -21,6 +21,10 @@
     <div id="auth">
         {{ $slot }}
     </div>
+
+    @if (flash()->message)
+        <script src="{{ asset('assets/static/js/components/alert.min.js') }}"></script>
+    @endif
 </body>
 
 </html>

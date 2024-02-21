@@ -17,11 +17,14 @@
     <link rel="stylesheet" href="{{ asset('assets/compiled/css/app-custom.min.css') }}" />
 
     <script src="{{ asset('assets/static/js/initTheme.js') }}"></script>
+
+
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 </head>
 
 <body>
     <div id="app">
-        @include('layouts.partials.sidebar')
+        <x-nav-menu />
 
         <div id="main">
             <div class="main-content">
@@ -34,7 +37,7 @@
                 {{ $slot }}
             </div>
 
-            @include('layouts.partials.footer')
+            <x-footer />
         </div>
     </div>
 
@@ -42,6 +45,10 @@
     <script src="{{ asset('assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
 
     <script src="{{ asset('assets/compiled/js/app.js') }}"></script>
+
+    @if (flash()->message)
+        <script src="{{ asset('assets/static/js/components/alert.min.js') }}"></script>
+    @endif
 
     @stack('js')
 

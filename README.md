@@ -65,6 +65,10 @@ If you want to check the original template in HTML5 and Bootstrap, [click here](
 - Breeze
 - Socialite
 
+## Resources
+- Bootstrap Icon
+- Spatie Flasher
+
 ## Contributing
 
 Feel free to contribute and make a pull request.
